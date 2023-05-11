@@ -1,0 +1,1 @@
+First time trying out to create a txt and writing into it using Nano... in future want to use VIM. 

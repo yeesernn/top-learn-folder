@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <!-- <script>
+        console.log("Hello, World!");
+        console.log(23 + 97 + 33 + 21 + 5 + 92);
+        console.log((4 + 6 + 9) / 77);
+
+        let a = 10;
+        console.log(a);
+        console.log(9 * a);
+
+        let b = 7 * a;
+        console.log(b);
+
+        const max = 57;
+        let actual = max - 13;
+        let percentage = actual / max;
+        console.log(percentage);
+    </script> -->
+
+    <!-- exercise from: https://javascript.info/logical-operators -->
+    <!-- my problems:
+    1. i did not know when to put ; , i think i put at the condition part of else , made code breaks
+    2. my code doesn't work until i put the let password INSIDE the first if. 
+    3. at the 'else' part i put the condition of !==, which apparently don't need. Yeah saw another tut is no need de-->
+    <script>
+      let userName = prompt("Who's there?", "");
+      
+
+      if (userName === "Admin") {
+
+        let password = prompt("Password?", "");
+
+        if (password === "TheMaster") {
+            alert("Welcome!");
+        } else if (password === "Cancel" || password === "" || password === null) {
+            alert("Canceled");
+        } else {
+            alert("Wrong password!");
+        }
+
+
+      } else if (
+        userName === "Cancel" || userName === "" || userName === null) {
+        alert("Canceled");
+      } else {
+        alert("I don't know you...");
+      }
+    </script>
+  </body>
+</html>
